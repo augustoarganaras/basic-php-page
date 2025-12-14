@@ -12,7 +12,9 @@
     </form>
 
     <?php 
-        echo($_POST["password"]);
+        if(isset($_POST["password"])) {
+            echo($_POST["password"]);
+        }
     ?>
 </body>
 </html>
